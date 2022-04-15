@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile_App_V2.Views.UserProfile">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to User Profile"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry Text="Username Placeholder" IsReadOnly="True"></Entry>
+            <Entry Text="Name Placeholder"></Entry>
+            <Button Text="Save Placeholder"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

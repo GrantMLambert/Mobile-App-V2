@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile_App_V2.Views.Login"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Username:" />
+            <Entry Placeholder="Username"/>
+            <Label Text="Password: " />
+            <Entry IsPassword="True" Placeholder="Password" />
+            <Button Text="Login" Clicked="Login_Clicked" />
+            <Label Text="Register">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Register_Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
