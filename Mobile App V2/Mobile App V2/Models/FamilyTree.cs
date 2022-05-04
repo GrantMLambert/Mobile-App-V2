@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Mobile_App_V2.Models
 {
-    public class FamilyTree
+    
+    public class FamilyTree : User
     {
         abstract class Individual
         {
@@ -17,22 +18,23 @@ namespace Mobile_App_V2.Models
 
         class Ancestor : Parent { }
 
-        private static void DisplayFamilyTree(Individual individual, int indent = 0)
+        private static string DisplayFamilyTree(Individual individual, int generation = 0)
         {
-            var indentLines = new string(' ', indent);
+            int newGeneration = generation;
 
             if (individual is Parent)
             {
-                Console.WriteLine(indentLines + "*" + individual.Name);
+                
                 var parent = individual as Parent;
                 foreach (var child in parent.Children)
                 {
-                    DisplayFamilyTree(child, indent + 2);
+                    DisplayFamilyTree(child, generation + 1);
                 }
+                return newGeneration + individual.Name;
             }
             else
             {
-                Console.WriteLine(indentLines + "-" + individual.Name);
+                return newGeneration + individual.Name;
             }
         }
     }

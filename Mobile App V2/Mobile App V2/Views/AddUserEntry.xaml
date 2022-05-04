@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Mobile_App_V2.Views.UserProfile">
+             x:Class="Mobile_App_V2.Views.AddUserEntry">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to User Profile"
+            <Label Text="Add User Entry"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Entry Text="User" IsReadOnly="True"></Entry>
-            <!--Temporary placeholder for string interpolation -->
-            <Entry Text="John"></Entry>
-            <Button Text="Save Changes"></Button>
+            <Entry Placeholder="Family ID"></Entry>
+            <Entry Placeholder="Family Member ID"></Entry>
+            <Entry Placeholder="Event Entry" />
+            <Button Text="Submit" Clicked="Button_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
