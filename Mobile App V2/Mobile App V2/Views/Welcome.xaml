@@ -4,9 +4,13 @@
              x:Class="Mobile_App_V2.Views.Welcome">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <!-- Temporary placeholder for future string interpolation-->
+            <Label Text="Hi John! Welcome to MyFamily App!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="UserProfile" Clicked="UserProfile_Clicked" />
+            <Button Text="Family Tree" Clicked="FamilyTree_Clicked" />
+            <Button Text="Add Entry" Clicked="Entry_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

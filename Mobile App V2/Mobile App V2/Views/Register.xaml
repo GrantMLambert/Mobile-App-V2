@@ -5,7 +5,18 @@
              Shell.FlyoutBehavior="Disabled">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Register Page"/>
+            <Label Text="Register" />
+            <Label Text="Username:" />
+            <Entry Placeholder="Username"/>
+            <Label Text="Password: " />
+            <Entry IsPassword="True" Placeholder="Password" />
+            <Label Text="Confirm Pasword: " />
+            <Entry IsPassword="True" Placeholder="Confirm Password" />
+            <Button Text="Register" ></Button>
+            <!-- " Clicked="Register_Clicked" /> -->
+
         </StackLayout>
+        
     </ContentPage.Content>
+    
 </ContentPage>

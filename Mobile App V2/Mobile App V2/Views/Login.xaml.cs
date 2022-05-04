@@ -19,7 +19,7 @@ namespace Mobile_App_V2.Views
 
         private async void Login_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(Welcome)}");
+            await Shell.Current.GoToAsync($"{nameof(Welcome)}");
         }
 
         private async void Register_Clicked(object sender, EventArgs e)
